@@ -1,0 +1,10 @@
+entity.dvglogaudit.settings:
+  title: Dvglogaudit
+  description: Configure a Dvglogaudit entity type
+  route_name:  entity.dvglogaudit.settings
+  parent: system.admin_structure
+entity.dvglogaudit.collection:
+  title: Dvglogaudits
+  description: List of dvglogaudits
+  route_name: entity.dvglogaudit.collection
+  parent: system.admin_content

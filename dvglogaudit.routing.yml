@@ -1,0 +1,7 @@
+entity.dvglogaudit.settings:
+  path: 'admin/structure/dvglogaudit'
+  defaults:
+    _form: '\Drupal\dvglogaudit\Form\DvglogauditSettingsForm'
+    _title: 'Dvglogaudit'
+  requirements:
+    _permission: 'administer dvglogaudit'

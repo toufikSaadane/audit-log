@@ -1,0 +1,17 @@
+services:
+  dvgauditlog.event_subscribe_node_insert:
+    class: Drupal\dvglogaudit\EventSubscriber\DvgAuditLogSubscriber
+    arguments: []
+    tags:
+      - { name: 'event_subscriber' }
+
+  dvgauditlog.event_subscribe_node_update:
+    class: Drupal\dvglogaudit\EventSubscriber\DvgAuditLogSubscriber
+    arguments: []
+    tags:
+      - { name: 'event_subscriber' }
+
+
+  dvgauditlog.dvglog_entity:
+    class: Drupal\dvglogaudit\Entity\Dvglogaudit
+    arguments: []

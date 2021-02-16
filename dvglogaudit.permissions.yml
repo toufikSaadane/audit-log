@@ -1,0 +1,5 @@
+administer dvglogaudit:
+  title: 'Administer dvglogaudit settings'
+  restrict access: true
+access dvglogaudit overview:
+  title: 'Access dvglogaudit overview page'

@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Provides a dvglogaudit entity type.
+ */
+
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\dvglogaudit\Event\DvgAuditLogEvent;
+
+
+/**
+ * Implements hook_ENTITY_TYPE_insert().
+ * @param EntityInterface $entity
+ */
+function dvglogaudit_node_insert(Drupal\Core\Entity\EntityInterface $entity) {
+  Drupal::service('event_dispatcher')
+    ->dispatch(DvgAuditLogEvent::DVGAUDITLOG_NODE_INSERT  , new DvgAuditLogEvent($entity));
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_update().
+ * @param EntityInterface $entity
+ */
+function dvglogaudit_node_update(Drupal\Core\Entity\EntityInterface $entity) {
+  Drupal::service('event_dispatcher')
+    ->dispatch(DvgAuditLogEvent::DVGAUDITLOG_NODE_UPDATE  , new DvgAuditLogEvent($entity));
+}

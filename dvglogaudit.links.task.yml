@@ -1,0 +1,22 @@
+entity.dvglogaudit.settings:
+  title: Settings
+  route_name: entity.dvglogaudit.settings
+  base_route: entity.dvglogaudit.settings
+entity.dvglogaudit.view:
+  title: View
+  route_name: entity.dvglogaudit.canonical
+  base_route: entity.dvglogaudit.canonical
+entity.dvglogaudit.edit_form:
+  title: Edit
+  route_name: entity.dvglogaudit.edit_form
+  base_route: entity.dvglogaudit.canonical
+entity.dvglogaudit.delete_form:
+  title: Delete
+  route_name: entity.dvglogaudit.delete_form
+  base_route: entity.dvglogaudit.canonical
+  weight: 10
+entity.dvglogaudit.collection:
+  title: Dvglogaudit
+  route_name: entity.dvglogaudit.collection
+  base_route: system.admin_content
+  weight: 10

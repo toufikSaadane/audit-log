@@ -1,0 +1,5 @@
+dvglogaudit.add_form:
+  route_name: entity.dvglogaudit.add_form
+  title: 'Add dvglogaudit'
+  appears_on:
+    - entity.dvglogaudit.collection
